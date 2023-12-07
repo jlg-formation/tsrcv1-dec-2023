@@ -7,8 +7,10 @@ const articles = [
 
 const app = express.Router();
 
-app.get("/articles", (req, res) => {
+const articleGetMw = (req: express.Request, res: express.Response) => {
   res.json(articles);
-});
+};
+
+app.get("/articles", articleGetMw);
 
 export default app;
