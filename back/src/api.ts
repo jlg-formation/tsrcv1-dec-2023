@@ -1,6 +1,7 @@
 import express from "express";
+import { Article } from "./interfaces/Article";
 
-const articles = [
+const articles: Article[] = [
   { id: "a1", name: "Truc", price: 2.99, qty: 123 },
   { id: "a2", name: "Marteau", price: 5.99, qty: 34 },
 ];
