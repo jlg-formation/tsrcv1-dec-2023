@@ -4,9 +4,12 @@ const express = require("express");
 
 const app = express();
 
-app.get("/toto", (req, res) => {
-  res.json({ toto: 123 });
+app.use((req, res, next) => {
+  console.log("req: ", req.method, req.url);
+  next();
 });
+
+app.use(express.static("."));
 
 app.listen(3000, () => {
   console.log("Server started with success on port 3000");
