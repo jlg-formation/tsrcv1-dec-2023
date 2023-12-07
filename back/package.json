@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Server express qui donne un CRUD d'article",
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
@@ -11,5 +12,8 @@
   "dependencies": {
     "express": "^4.18.2",
     "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
