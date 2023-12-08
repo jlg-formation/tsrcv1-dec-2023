@@ -19,6 +19,7 @@ npm i -g firebase-tools@latest
 cd firebase-back
 cd functions
 npm i
+npm run build
 cd ..
 firebase emulators:start
 ```
