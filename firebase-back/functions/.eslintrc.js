@@ -27,5 +27,6 @@ module.exports = {
     indent: 0,
     "object-curly-spacing": 0,
     "quote-props": 0,
+    "max-len": 0,
   },
 };

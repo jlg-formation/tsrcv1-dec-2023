@@ -9,6 +9,13 @@
 
 import { onRequest } from "firebase-functions/v2/https";
 import * as logger from "firebase-functions/logger";
+import { initializeApp } from "firebase-admin/app";
+
+export { hello } from "./hello";
+export { addMessage } from "./addMessage";
+export { getAllMessages } from "./getAllMessages";
+
+initializeApp();
 
 // Start writing functions
 // https://firebase.google.com/docs/functions/typescript
