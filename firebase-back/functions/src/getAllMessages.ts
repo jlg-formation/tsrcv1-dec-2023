@@ -9,7 +9,11 @@ export const getAllMessages = onRequest(async (req, res) => {
   const result: (FirebaseFirestore.DocumentData | undefined)[] = [];
   for (const doc of documents) {
     const d = await doc.get();
-    result.push(d.data());
+    const data = d.data();
+    if (data === undefined) {
+      continue;
+    }
+    result.push(data);
     logger.info('info sur le doc: ', d.data());
   }
 

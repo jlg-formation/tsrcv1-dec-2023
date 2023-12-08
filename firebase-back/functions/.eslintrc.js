@@ -11,6 +11,7 @@ module.exports = {
     'plugin:import/typescript',
     'google',
     'plugin:@typescript-eslint/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -28,5 +29,6 @@ module.exports = {
     'object-curly-spacing': 0,
     'quote-props': 0,
     'max-len': 0,
+    eqeqeq: 'error',
   },
 };
